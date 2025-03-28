@@ -9,7 +9,7 @@ export default function Feed() {
   useEffect(() => { // use effect for client side rendering
     const fetchPosts = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/feed");
+        const response = await fetch("http://localhost:3000/api/livefeed");
         const data = await response.json();
         setPosts(data);
       } catch (error) {
